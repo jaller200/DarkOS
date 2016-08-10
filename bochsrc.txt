@@ -1,0 +1,12 @@
+# ROM and VGA BIOS images
+romimage: file=/Users/jonathanhart/opt/bochs/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/Users/jonathanhart/opt/bochs/share/bochs/VGABIOS-lgpl-latest
+
+# boot from floppy using out disk image
+floppya: 1_44=os-image.img, status=inserted
+boot: a
+
+# logging and reporting
+log: OSDev.log
+error: action=report
+info: action=report
